@@ -3,7 +3,7 @@ import pandas as pd
 if __name__ == "__main__":
     # Loading dataframes
     dc_characters = pd.read_csv("../data/raw/dc-wikia-data.csv")
-    marvel_characters = pd.read_csv("../data/raw/marvel-wikia-data.csv").rename(columns = {'Year': 'YEAR'})
+    marvel_characters = pd.read_csv("../data/raw/marvel-wikia-data.csv").rename(columns={'Year': 'YEAR'})
 
     # Adding the editorial
     dc_characters["editorial"] = "DC"
